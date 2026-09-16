@@ -32,7 +32,6 @@ In this table, you can find the successive versions of this HAL-LL Driver compon
 It is **crucial** that you use a consistent set of versions for the CMSIS Core - CMSIS Device - HAL, as mentioned in this table.
 
 HAL Driver F1 | CMSIS Device F1 | CMSIS Core | Was delivered in the full MCU package
-------------- | --------------- | ---------- | -------------------------------------
 Tag v1.1.4 | Tag v4.3.1 | Tag v5.4.0_cm3 | Tag v1.8.0 (and following, if any, till next HAL tag)
 Tag v1.1.5 | Tag v4.3.1 | Tag v5.4.0_cm3 | Tag v1.8.1 (and following, if any, till next HAL tag)
 Tag v1.1.6 | Tag v4.3.2 | Tag v5.4.0_cm3 | Tag v1.8.2 (and following, if any, till next HAL tag)
