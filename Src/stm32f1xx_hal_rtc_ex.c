@@ -470,7 +470,7 @@ __weak void HAL_RTCEx_RTCEventErrorCallback(RTC_HandleTypeDef *hrtc)
   * @param  Data: Data to be written in the specified RTC Backup data register.
   * @retval None
   */
-void HAL_RTCEx_BKUPWrite(RTC_HandleTypeDef *hrtc, uint32_t BackupRegister, uint32_t Data)
+void HAL_RTCEx_BKUPWrite(RTC_HandleTypeDef *hrtc, uint32_t BackupRegister, uint16_t Data)
 {
   uint32_t tmp = 0U;
 
@@ -483,7 +483,7 @@ void HAL_RTCEx_BKUPWrite(RTC_HandleTypeDef *hrtc, uint32_t BackupRegister, uint3
   tmp = (uint32_t)BKP_BASE;
   tmp += (BackupRegister * 4U);
 
-  *(__IO uint32_t *) tmp = (Data & BKP_DR1_D);
+  *(__IO uint32_t *) tmp = Data;
 }
 
 /**
